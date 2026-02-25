@@ -1,0 +1,17 @@
+.env
+voice_profiles/
+*.log
+logs/
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+.DS_Store
+*.whisper/
+config/google_credentials.json
+todo.db
