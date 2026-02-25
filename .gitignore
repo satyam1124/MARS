@@ -15,3 +15,4 @@ build/
 *.whisper/
 config/google_credentials.json
 todo.db
+.pytest_cache/

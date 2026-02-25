@@ -1,0 +1,39 @@
+mars:
+  owner_name: "Satyam"
+  wake_word: "hey mars"
+  language: "en"
+  tts_engine: "macos"  # options: macos, pyttsx3, elevenlabs
+  voice_verification: true
+  voice_threshold: 0.75
+  whisper_model: "base"
+  
+audio:
+  sample_rate: 16000
+  channels: 1
+  chunk_size: 1024
+  silence_threshold: 500
+  silence_duration: 1.5
+  max_recording_duration: 30
+
+ai:
+  model: "gpt-4o"
+  max_tokens: 1024
+  temperature: 0.7
+  max_history: 20
+  system_prompt: "You are MARS (My Automated Response System), a witty, intelligent, and efficient AI assistant inspired by J.A.R.V.I.S. You assist your owner Satyam (address them as 'sir'). Be concise, helpful, and occasionally witty. When executing system tasks, confirm dangerous operations before proceeding."
+
+features:
+  web_search: true
+  weather: true
+  news: true
+  email: true
+  calendar: true
+  music: true
+  smart_home: false
+  camera: false
+  
+logging:
+  level: "INFO"
+  file: "logs/mars.log"
+  max_bytes: 10485760
+  backup_count: 5
